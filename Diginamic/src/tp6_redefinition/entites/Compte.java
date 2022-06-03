@@ -1,4 +1,4 @@
-package tp5_encapsulation.banque.entites;
+package tp6_redefinition.entites;
 
 public class Compte {
 
@@ -16,4 +16,10 @@ public class Compte {
     public int getAccoundSold() {
         return accoundSold;
     }    
+
+    @Override
+    public String toString() {
+        String compte = accountNumber + " " + accoundSold;
+        return compte;
+    }
 }
