@@ -6,8 +6,8 @@ public class ConversionNombre {
 
     static int converted = Integer.parseInt(chaine);
 
-    int a;
-    int b;
+    static int a = 15;
+    static int b = 25;
 
     public static int max(int a, int b) {
         int c = Math.max(a, b);
@@ -16,6 +16,6 @@ public class ConversionNombre {
 
     public static void main(String[] args) {
         System.out.println("Chaine convertie : " + converted);
-        System.out.println("Plus grand chiffre: "+ max(15, 25));
+        System.out.println("Plus grand chiffre: " + max(a, b));
     }
 }
