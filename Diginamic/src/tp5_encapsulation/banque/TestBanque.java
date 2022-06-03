@@ -8,5 +8,4 @@ public class TestBanque {
         Compte compte = new Compte("15456444154", 654);
         System.out.println(compte.getAccoundSold() + " " + compte.getAccountNumber());
     }
-    
 }

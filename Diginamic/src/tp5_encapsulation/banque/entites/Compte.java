@@ -7,8 +7,8 @@ public class Compte {
         this.accoundSold = accoundSold;
     }
 
-    String accountNumber;
-    int accoundSold;
+    private String accountNumber;
+    private int accoundSold;
     
     public String getAccountNumber() {
         return accountNumber;
