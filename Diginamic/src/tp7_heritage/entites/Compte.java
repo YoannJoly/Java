@@ -9,13 +9,14 @@ public class Compte {
 
     private String accountNumber;
     private int accoundSold;
-    
+
     public String getAccountNumber() {
         return accountNumber;
     }
+
     public int getAccoundSold() {
         return accoundSold;
-    }    
+    }
 
     @Override
     public String toString() {

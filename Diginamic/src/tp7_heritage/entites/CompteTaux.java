@@ -6,14 +6,12 @@ public class CompteTaux extends Compte {
 
     public CompteTaux(String accountNumber, int accoundSold, int taux) {
         super(accountNumber, accoundSold);
-        this.taux= taux;
+        this.taux = taux;
     }
 
-   @Override
-   public String toString() {       
-       return super.toString() + " Taux: " + taux + "%";
-   }
+    @Override
+    public String toString() {
+        return super.toString() + " Taux: " + taux + "%";
+    }
 
-    
-    
 }
