@@ -2,7 +2,7 @@ package tp7_heritage.entites;
 
 public class CompteTaux extends Compte {
 
-    private int taux = 2;
+    private int taux;
 
     public CompteTaux(String accountNumber, int accoundSold, int taux) {
         super(accountNumber, accoundSold);
