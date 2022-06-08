@@ -12,6 +12,8 @@ public class Ville {
         cities.remove(smallestCity());
 
         System.out.println("Liste sans la plus petite ville: " + cities);
+
+        System.out.println("Grandes villes en capital :" + upperBig());
     }
 
     String nom;
@@ -56,6 +58,16 @@ public class Ville {
             }
         }
         return index;
+    }
+
+    static List<Ville> upperBig() {
+        for (int i = 0; i < cities.size(); i++) {
+            if (cities.get(i).nbrHabitants > 100000) {
+                cities.get(i).nom = cities.get(i).nom.toUpperCase();
+            }
+        }
+
+        return cities;
     }
 
     @Override
