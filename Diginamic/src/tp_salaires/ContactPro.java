@@ -1,6 +1,6 @@
 package tp_salaires;
 
-public class ContactPro {
+class ContactPro {
     String contactTel;
     String contactMail;
     String service;
