@@ -25,4 +25,8 @@ class ContactPerso {
         this.contactmail = contactmail;
     }
 
+    @Override
+    public String toString() {
+        return contactTel + " " + contactmail;
+    }
 }

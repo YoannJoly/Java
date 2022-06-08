@@ -45,4 +45,9 @@ class ContactPro {
         this.adresseSociety = adresseSociety;
     }
 
+    @Override
+    public String toString() {
+        return contactMail + " " + contactTel + " " + service + " " + adresseSociety;
+    }
+
 }
