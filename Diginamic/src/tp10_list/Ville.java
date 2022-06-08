@@ -16,8 +16,8 @@ public class Ville {
         System.out.println("Grandes villes en capital :" + upperBig());
     }
 
-    String nom;
-    int nbrHabitants;
+    public String nom;
+    public int nbrHabitants;
 
     public Ville(String nom, int nbrHabitants) {
         this.nom = nom;
@@ -67,6 +67,12 @@ public class Ville {
             }
         }
 
+        return cities;
+    }
+
+    
+
+    public static List<Ville> getCities() {
         return cities;
     }
 
