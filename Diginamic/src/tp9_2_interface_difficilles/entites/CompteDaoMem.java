@@ -10,13 +10,13 @@ public class CompteDaoMem implements CompteDao {
     }
 
     @Override
-    public void sauvegarder(Compte nvCompte) {
-        Compte[] newCompte = { comptes[0], comptes[1], nvCompte };
+    public void sauvegarder(final Compte nvCompte) {
+        final Compte[] newCompte = { comptes[0], comptes[1], nvCompte };
         comptes = newCompte;
     }
 
     @Override
-    public boolean supprimer(String numero) {
+    public boolean supprimer(final String numero) {
         for (int i = 0; i < comptes.length; i++) {
             if (comptes[i].getAccountNumber().equals(numero)) {
                 comptes[i] = null;
@@ -26,12 +26,12 @@ public class CompteDaoMem implements CompteDao {
     }
 
     @Override
-    public boolean existe(String numero) {
+    public boolean existe(final String numero) {
         return false;
     }
 
     @Override
-    public Compte getCompte(String numero) {
+    public Compte getCompte(final String numero) {
         return null;
     }
 

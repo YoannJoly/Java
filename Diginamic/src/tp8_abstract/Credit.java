@@ -2,7 +2,7 @@ package tp8_abstract;
 
 public class Credit extends Operation {
 
-    public Credit(String date, int ammountoperation) {
+    public Credit(final String date, final int ammountoperation) {
         super(date, ammountoperation);
     }
 

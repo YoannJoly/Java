@@ -3,14 +3,14 @@ import java.util.Scanner;
 
 public class Exercice_2 {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         // Variables
         int nb=0, nbInf=0, nbSup=0, numero, numeroPetit=0, numeroGrand=0;
         float montant, total=0f, montantPetit=0f, montantGrand=0f, totInf=0f, totSup=0f;
 
         // Déclaration du Scanner
-        Scanner scanner = new Scanner(System.in);
+        final Scanner scanner = new Scanner(System.in);
 
         do {
 

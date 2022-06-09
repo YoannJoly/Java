@@ -4,8 +4,8 @@ import java.util.HashMap;
 
 public class CreationMap {
 
-    public static void main(String[] args) {
-        HashMap<String, Integer> mapSalaires = new HashMap<String, Integer>();
+    public static void main(final String[] args) {
+        final HashMap<String, Integer> mapSalaires = new HashMap<String, Integer>();
 
         mapSalaires.put("Paul", 1750);
         mapSalaires.put("Hicham", 1825);

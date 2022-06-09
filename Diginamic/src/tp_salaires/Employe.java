@@ -4,8 +4,8 @@ public class Employe extends Personne {
 
     String matricule;
 
-    public Employe(String name, String fisrtName, String socialNumber, Adresse adresse, ContactPerso contactPerso,
-            Adresse adressePro, ContactPro contactPro, String matricule) {
+    public Employe(final String name, final String fisrtName, final String socialNumber, final Adresse adresse, final ContactPerso contactPerso,
+            final Adresse adressePro, final ContactPro contactPro, final String matricule) {
         super(name, fisrtName, socialNumber, adresse, contactPerso, adressePro, contactPro);
         this.matricule = matricule;
     }
@@ -14,7 +14,7 @@ public class Employe extends Personne {
         return matricule;
     }
 
-    public void setMatricule(String matricule) {
+    public void setMatricule(final String matricule) {
         this.matricule = matricule;
     }
     

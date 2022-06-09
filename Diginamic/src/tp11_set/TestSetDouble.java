@@ -6,7 +6,7 @@ import java.util.HashSet;
 public class TestSetDouble {
     static HashSet<Double> hashset = new HashSet<Double>(Arrays.asList(1.5, 8.25, -7.32, 13.3, -12.45, 48.5, 0.01));
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         System.out.println("Collection complete: " + hashset);
         System.out.println("Plus grand élément: " + greatestElement());
 
@@ -17,7 +17,7 @@ public class TestSetDouble {
 
     static Double greatestElement() {
         Double max = 0.0;
-        for (Double i : hashset) {
+        for (final Double i : hashset) {
             if (i > max) {
                 max = i;
             }
@@ -27,7 +27,7 @@ public class TestSetDouble {
 
     static void deleteSmallestElement() {
         Double min = 0.0;
-        for (Double i : hashset) {
+        for (final Double i : hashset) {
             if (i < min) {
                 min = i;
             }

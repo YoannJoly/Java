@@ -2,10 +2,10 @@ package tp9_2_interface_difficilles.entites;
 
 public abstract class Operation {
 
-    private String date;
-    private int ammountoperation;
+    private final String date;
+    private final int ammountoperation;
 
-    public Operation(String date, int ammountoperation) {
+    public Operation(final String date, final int ammountoperation) {
         this.date = date;
         this.ammountoperation = ammountoperation;
     }

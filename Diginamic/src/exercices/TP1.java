@@ -67,7 +67,7 @@ public class TP1 {
         try (Scanner scanner = new Scanner(System.in)) {
 
             System.out.println("Poids en grammes:");
-            Integer a = scanner.nextInt();
+            final Integer a = scanner.nextInt();
 
             if (viande == "boeuf") {
                 if (cuisson == "bleu") {
@@ -89,7 +89,7 @@ public class TP1 {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Main();
     }
 }

@@ -2,10 +2,10 @@ package tp3_methodes;
 
 public class TestPersonne {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
-        Personne firstPersonne = new Personne("Doe", "John");
-        Personne secondPersonne = new Personne("Tard", "Guy", 69000);
+        final Personne firstPersonne = new Personne("Doe", "John");
+        final Personne secondPersonne = new Personne("Tard", "Guy", 69000);
 
         System.out.println(firstPersonne.returnName());
         System.out.println(secondPersonne.returnName());

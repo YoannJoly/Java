@@ -2,13 +2,13 @@ package tp_salaires;
 
 public class Technicien extends Employe {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         System.out.println("Statut: Technicien\nMission : " + getMission() + "\nSalaire brut: " + getGrossSalary(14)
                 + "\nSalaire net: " + getNetSalary(14));
     }
 
-    public Technicien(String name, String fisrtName, String socialNumber, Adresse adresse, ContactPerso contactPerso,
-            Adresse adressePro, ContactPro contactPro, String matricule) {
+    public Technicien(final String name, final String fisrtName, final String socialNumber, final Adresse adresse, final ContactPerso contactPerso,
+            final Adresse adressePro, final ContactPro contactPro, final String matricule) {
         super(name, fisrtName, socialNumber, adresse, contactPerso, adressePro, contactPro, matricule);
     }
 
@@ -16,11 +16,11 @@ public class Technicien extends Employe {
         return "Fabriquer et contrôler les produits de l’entreprise";
     }
 
-    static int getGrossSalary(int tauxHoraire) {
+    static int getGrossSalary(final int tauxHoraire) {
         return 1607 * tauxHoraire;
     }
 
-    static double getNetSalary(int tauxHoraire) {
+    static double getNetSalary(final int tauxHoraire) {
         return getGrossSalary(tauxHoraire) * 0.76;
     }
 

@@ -2,9 +2,9 @@ package tp9_2_interface_difficilles.entites;
 
 public class CompteTaux extends Compte {
 
-    private int taux;
+    private final int taux;
 
-    public CompteTaux(String accountNumber, int accoundSold, int taux) {
+    public CompteTaux(final String accountNumber, final int accoundSold, final int taux) {
         super(accountNumber, accoundSold);
         this.taux = taux;
     }

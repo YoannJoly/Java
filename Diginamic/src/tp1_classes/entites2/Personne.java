@@ -2,7 +2,7 @@ package tp1_classes.entites2;
 
 public class Personne {
 
-    public Personne(String name, String firstName, int postalCode) {
+    public Personne(final String name, final String firstName, final int postalCode) {
         this.name = name;
         this.firstName = firstName;
         this.postalCode = postalCode;

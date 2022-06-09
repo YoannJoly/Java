@@ -4,10 +4,10 @@ import tp1_classes.entites2.Personne;
 
 public class TestPersonne {
     
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         
-        Personne firstPersonne = new Personne("Doe", "John", 34000);
-        Personne secondPersonne = new Personne("Tard", "Guy", 69000);
+        final Personne firstPersonne = new Personne("Doe", "John", 34000);
+        final Personne secondPersonne = new Personne("Tard", "Guy", 69000);
 
         System.out.println(firstPersonne.name);
         System.out.println(secondPersonne.firstName);

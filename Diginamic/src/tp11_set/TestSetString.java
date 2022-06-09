@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 
 public class TestSetString {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         System.out.println("Pays qui a le plus grand nombre de lettres: " + longestCountry());
         deleteCountry();
         System.out.println("Pays precedent supprimmé: " + hashset);
@@ -15,7 +15,7 @@ public class TestSetString {
 
     static String longestCountry() {
         String longestCountry = "";
-        for (String i : hashset) {
+        for (final String i : hashset) {
             if (i.length() > longestCountry.length()) {
                 longestCountry = i;
             }

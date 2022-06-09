@@ -10,8 +10,8 @@ public abstract class Personne {
     Adresse adressePro = new Adresse(0, "", 0, "");
     ContactPro contactPro = new ContactPro("", "", "", adressePro);
 
-    public Personne(String name, String fisrtName, String socialNumber, Adresse adresse, ContactPerso contactPerso,
-            Adresse adressePro, ContactPro contactPro) {
+    public Personne(final String name, final String fisrtName, final String socialNumber, final Adresse adresse, final ContactPerso contactPerso,
+            final Adresse adressePro, final ContactPro contactPro) {
         this.name = name;
         this.fisrtName = fisrtName;
         this.socialNumber = socialNumber;
@@ -25,7 +25,7 @@ public abstract class Personne {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -33,7 +33,7 @@ public abstract class Personne {
         return fisrtName;
     }
 
-    public void setFisrtName(String fisrtName) {
+    public void setFisrtName(final String fisrtName) {
         this.fisrtName = fisrtName;
     }
 
@@ -41,7 +41,7 @@ public abstract class Personne {
         return socialNumber;
     }
 
-    public void setSocialNumber(String socialNumber) {
+    public void setSocialNumber(final String socialNumber) {
         this.socialNumber = socialNumber;
     }
 
@@ -49,7 +49,7 @@ public abstract class Personne {
         return adresse;
     }
 
-    public void setAdresse(Adresse adresse) {
+    public void setAdresse(final Adresse adresse) {
         this.adresse = adresse;
     }
 
@@ -57,7 +57,7 @@ public abstract class Personne {
         return contactPerso;
     }
 
-    public void setContactPerso(ContactPerso contactPerso) {
+    public void setContactPerso(final ContactPerso contactPerso) {
         this.contactPerso = contactPerso;
     }
 
@@ -65,7 +65,7 @@ public abstract class Personne {
         return adressePro;
     }
 
-    public void setAdressePro(Adresse adressePro) {
+    public void setAdressePro(final Adresse adressePro) {
         this.adressePro = adressePro;
     }
 
@@ -73,7 +73,7 @@ public abstract class Personne {
         return contactPro;
     }
 
-    public void setContactPro(ContactPro contactPro) {
+    public void setContactPro(final ContactPro contactPro) {
         this.contactPro = contactPro;
     }
 

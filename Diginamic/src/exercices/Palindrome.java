@@ -23,12 +23,12 @@ public class Palindrome {
         return true;
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         try (// Déclaration du scanner
         Scanner scanner = new Scanner(System.in)) {
             // Demande du mot
             System.out.println("Veuillez saisir un mot: ");
-            String word = scanner.nextLine();
+            final String word = scanner.nextLine();
 
             // Résultat
             System.out.println("Le mot " + word + " "+ (isPalindrome(word) ? "est" : "n'est pas") + " un palindrome !");

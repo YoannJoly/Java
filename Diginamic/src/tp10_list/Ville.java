@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Ville implements Comparable<Ville> {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         System.out.println("Ville avec le plus d'habitants: " + greatestCity());
         System.out.println("Toutes les villes: " + cities);
 
@@ -19,7 +19,7 @@ public class Ville implements Comparable<Ville> {
     public String nom;
     public int nbrHabitants;
 
-    public Ville(String nom, int nbrHabitants) {
+    public Ville(final String nom, final int nbrHabitants) {
         this.nom = nom;
         this.nbrHabitants = nbrHabitants;
     }
@@ -70,13 +70,9 @@ public class Ville implements Comparable<Ville> {
         return cities;
     }
 
-    
-
     public static List<Ville> getCities() {
         return cities;
     }
-
-    
 
     public String getNom() {
         return nom;
@@ -88,11 +84,11 @@ public class Ville implements Comparable<Ville> {
     }
 
     @Override
-    public int compareTo(Ville o) {
-        if (this.nom.charAt(0) > o.nom.charAt(0)){
+    public int compareTo(final Ville o) {
+        if (this.nom.charAt(0) > o.nom.charAt(0)) {
             return 1;
         }
-        if (this.nom.charAt(0)  < o.nom.charAt(0) ){
+        if (this.nom.charAt(0) < o.nom.charAt(0)) {
             return -1;
         }
         return 0;

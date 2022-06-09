@@ -15,7 +15,7 @@ public class Rectangle implements ObjetGeometrique {
         return longueur * largeur;
     }
 
-    public Rectangle(int longueur, int largeur) {
+    public Rectangle(final int longueur, final int largeur) {
         this.longueur = longueur;
         this.largeur = largeur;
     }

@@ -8,7 +8,7 @@ public class TestListeString {
     static List<String> list = new ArrayList<String>(
             Arrays.asList("Nice", "Carcassonne", "Narbonne", "Lyon", "Foix", "Pau", "Marseille", "Tarbes"));
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         int index = 0;
         int elementLength = list.get(0).length();
         for (int i = 1; i < list.size(); i++) {

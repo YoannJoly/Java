@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 public class Pays {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         System.out.println("Pays avec le PIB le plus important: " + greatestPib());
     }
 
@@ -13,7 +13,7 @@ public class Pays {
     int nbreHabitants;
     int pib;
 
-    public Pays(String nom, int nbreHabitants, int pib) {
+    public Pays(final String nom, final int nbreHabitants, final int pib) {
         this.nom = nom;
         this.nbreHabitants = nbreHabitants;
         this.pib = pib;
@@ -35,7 +35,7 @@ public class Pays {
     static String greatestPib() {
         int max = 0;
         String country = "";
-        for (Pays i : countries) {
+        for (final Pays i : countries) {
             if (i.pib > max) {
                 max = i.pib;
                 country = i.nom;

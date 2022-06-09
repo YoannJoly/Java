@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class CorrectionTP1 {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         // Variables
         int viande, cuisson, poids;
@@ -20,7 +20,7 @@ public class CorrectionTP1 {
         final byte UNE_MINUTE = 60;
 
         // Scanner
-        Scanner sc = new Scanner(System.in);
+        final Scanner sc = new Scanner(System.in);
 
         // Viande
         System.out.println("Viande ?");

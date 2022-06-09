@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Distributeur {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
         // Variables
         final float PRIX_CAFE = 0.60f;
@@ -22,7 +22,7 @@ public class Distributeur {
             do {
 
                 // Demande de la saisie
-                float saisie = sc.nextFloat();
+                final float saisie = sc.nextFloat();
 
                 // Vérification de la saisie
                 if (saisie != 0.05f && saisie != 0.10f && saisie != 0.20f && saisie != 0.50f && saisie != 1f
@@ -45,10 +45,10 @@ public class Distributeur {
         System.out.println("Votre monnaie (" + redit / 100f + " €)");
 
         // Pieces Accéptées
-        ArrayList<Integer> pieces = new ArrayList<>(Arrays.asList(100, 50, 20, 10, 5));
+        final ArrayList<Integer> pieces = new ArrayList<>(Arrays.asList(100, 50, 20, 10, 5));
 
         // Parcours des piéces
-        for (int piece : pieces) {
+        for (final int piece : pieces) {
 
             // Vérification des pieces
             if (redit >= piece) {

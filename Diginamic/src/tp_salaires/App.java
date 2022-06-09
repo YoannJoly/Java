@@ -11,7 +11,7 @@ public class App {
     static Cadre cadre = new Cadre("", "", "", cadreAdressePerso, cadreContactPerso, cadreAdressePro, cadreContactPro,
             "54gg5ed4y");
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         cadre.setName("Truand");
         cadre.setFisrtName("Tony");
         cadre.setSocialNumber("154654");

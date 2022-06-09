@@ -9,7 +9,7 @@ public class App {
 
     static CompteDaoMem compteDao = new CompteDaoMem();
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         menu();
     }
 
@@ -45,9 +45,9 @@ public class App {
     static void newAccount() {
         try (Scanner in = new Scanner(System.in)) {
             System.out.println("Numéro de compte:");
-            String newAccountNumber = in.nextLine();
+            final String newAccountNumber = in.nextLine();
             System.out.println("Solde du compte: ");
-            int newAmmount = in.nextInt();
+            final int newAmmount = in.nextInt();
             compteDao.sauvegarder(new Compte(newAccountNumber, newAmmount));
             listAccount();
         }

@@ -7,12 +7,12 @@ public class TP2 {
         int a;
         int b;
 
-        public void setData(int c, int d) {
+        public void setData(final int c, final int d) {
             a = c;
             b = d;
         }
 
-        public void newCheques(int a, int b) {
+        public void newCheques(final int a, final int b) {
             cheques[0].setData(a, b);
         }
     }
@@ -42,7 +42,7 @@ public class TP2 {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         displayMenuPoids();
     }
 

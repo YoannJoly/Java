@@ -2,12 +2,12 @@ package tp3_methodes;
 
 public class Personne {
 
-    public Personne(String name, String firstName) {
+    public Personne(final String name, final String firstName) {
         this.name = name;
         this.firstName = firstName;
     }
 
-    public Personne(String name, String firstName, int postalCode) {
+    public Personne(final String name, final String firstName, final int postalCode) {
         this(name, firstName);
         this.postalCode = postalCode;
     }
@@ -20,15 +20,15 @@ public class Personne {
        System.out.println(name.toUpperCase() + " " + firstName);
     }
 
-    void newName(String newName) {
+    void newName(final String newName) {
         name = newName;
     }
 
-    void newFirstName(String newFirstName) {
+    void newFirstName(final String newFirstName) {
         firstName = newFirstName;
     }
 
-    void newPostalCode(int newPostalCode) {
+    void newPostalCode(final int newPostalCode) {
         postalCode = newPostalCode;
     }
 

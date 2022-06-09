@@ -2,13 +2,13 @@ package tp6_redefinition.entites;
 
 public class Compte {
 
-    public Compte(String accountNumber, int accoundSold) {
+    public Compte(final String accountNumber, final int accoundSold) {
         this.accountNumber = accountNumber;
         this.accoundSold = accoundSold;
     }
 
-    private String accountNumber;
-    private int accoundSold;
+    private final String accountNumber;
+    private final int accoundSold;
     
     public String getAccountNumber() {
         return accountNumber;
@@ -19,7 +19,7 @@ public class Compte {
 
     @Override
     public String toString() {
-        String compte = accountNumber + " " + accoundSold;
+        final String compte = accountNumber + " " + accoundSold;
         return compte;
     }
 }

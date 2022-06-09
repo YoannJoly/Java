@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class Pendu {
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             System.out.println("Saisissez le mot à décourvrir: ");
             String word = scanner.nextLine();
             int tryErrors = 0;
             word = word.toLowerCase();
-            StringBuilder hideWord = new StringBuilder(word.replaceAll("[a-zA-Z]", "_"));
+            final StringBuilder hideWord = new StringBuilder(word.replaceAll("[a-zA-Z]", "_"));
             // String hideWord = word.replaceAll("[a-zA-Z]", "_");
             System.out.println(hideWord);
 
@@ -26,12 +26,12 @@ public class Pendu {
                 }
 
                 System.out.println("Entrez une lettre: ");
-                String newLetter = scanner.nextLine();
+                final String newLetter = scanner.nextLine();
 
                 if (newLetter.length() == 1) {
-                    String errorWord = hideWord.toString();
+                    final String errorWord = hideWord.toString();
                     for (int i = 0; i < word.length(); i++) {
-                        char letter = newLetter.charAt(0);
+                        final char letter = newLetter.charAt(0);
 
                         if (letter == word.charAt(i)) {
                             // String upper = String.valueOf(letter).toUpperCase();

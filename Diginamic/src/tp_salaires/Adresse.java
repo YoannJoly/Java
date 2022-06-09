@@ -2,7 +2,7 @@ package tp_salaires;
 
 class Adresse {
 
-    public Adresse(int streetNumber, String streetName, int postalCode, String city) {
+    public Adresse(final int streetNumber, final String streetName, final int postalCode, final String city) {
         this.streetNumber = streetNumber;
         this.streetName = streetName;
         this.postalCode = postalCode;
@@ -18,7 +18,7 @@ class Adresse {
         return streetNumber;
     }
 
-    public void setStreetNumber(int streetNumber) {
+    public void setStreetNumber(final int streetNumber) {
         this.streetNumber = streetNumber;
     }
 
@@ -26,7 +26,7 @@ class Adresse {
         return streetName;
     }
 
-    public void setStreetName(String streetName) {
+    public void setStreetName(final String streetName) {
         this.streetName = streetName;
     }
 
@@ -34,7 +34,7 @@ class Adresse {
         return postalCode;
     }
 
-    public void setPostalCode(int postalCode) {
+    public void setPostalCode(final int postalCode) {
         this.postalCode = postalCode;
     }
 
@@ -42,7 +42,7 @@ class Adresse {
         return city;
     }
 
-    public void setCity(String city) {
+    public void setCity(final String city) {
         this.city = city;
     }
 

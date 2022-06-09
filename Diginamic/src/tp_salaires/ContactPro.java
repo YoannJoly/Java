@@ -6,7 +6,7 @@ class ContactPro {
     String service;
     Adresse adresseSociety = new Adresse(0, "", 0, "");
 
-    public ContactPro(String contactTel, String contactMail, String service, Adresse adresseSociety) {
+    public ContactPro(final String contactTel, final String contactMail, final String service, final Adresse adresseSociety) {
         this.contactTel = contactTel;
         this.contactMail = contactMail;
         this.service = service;
@@ -17,7 +17,7 @@ class ContactPro {
         return contactTel;
     }
 
-    public void setContactTel(String contactTel) {
+    public void setContactTel(final String contactTel) {
         this.contactTel = contactTel;
     }
 
@@ -25,7 +25,7 @@ class ContactPro {
         return contactMail;
     }
 
-    public void setContactMail(String contactMail) {
+    public void setContactMail(final String contactMail) {
         this.contactMail = contactMail;
     }
 
@@ -33,7 +33,7 @@ class ContactPro {
         return service;
     }
 
-    public void setService(String service) {
+    public void setService(final String service) {
         this.service = service;
     }
 
@@ -41,7 +41,7 @@ class ContactPro {
         return adresseSociety;
     }
 
-    public void setAdresseSociety(Adresse adresseSociety) {
+    public void setAdresseSociety(final Adresse adresseSociety) {
         this.adresseSociety = adresseSociety;
     }
 

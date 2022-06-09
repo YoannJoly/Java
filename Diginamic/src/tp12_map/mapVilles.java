@@ -6,10 +6,10 @@ import tp10_list.Ville;
 
 public class mapVilles {
 
-    public static void main(String[] args) {
-        HashMap<String, Integer> cities = new HashMap<String, Integer>();
+    public static void main(final String[] args) {
+        final HashMap<String, Integer> cities = new HashMap<String, Integer>();
 
-        for (Ville i : Ville.getCities()) {
+        for (final Ville i : Ville.getCities()) {
             cities.put(i.nom, i.nbrHabitants);
         }
 

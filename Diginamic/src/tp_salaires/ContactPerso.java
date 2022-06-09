@@ -4,7 +4,7 @@ class ContactPerso {
     String contactTel;
     String contactmail;
 
-    public ContactPerso(String contactTel, String contactmail) {
+    public ContactPerso(final String contactTel, final String contactmail) {
         this.contactTel = contactTel;
         this.contactmail = contactmail;
     }
@@ -13,7 +13,7 @@ class ContactPerso {
         return contactTel;
     }
 
-    public void setContactTel(String contactTel) {
+    public void setContactTel(final String contactTel) {
         this.contactTel = contactTel;
     }
 
@@ -21,7 +21,7 @@ class ContactPerso {
         return contactmail;
     }
 
-    public void setContactmail(String contactmail) {
+    public void setContactmail(final String contactmail) {
         this.contactmail = contactmail;
     }
 

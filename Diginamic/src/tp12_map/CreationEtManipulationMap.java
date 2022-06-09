@@ -3,9 +3,9 @@ package tp12_map;
 import java.util.HashMap;
 
 public class CreationEtManipulationMap {
-    public static void main(String args[]) {
+    public static void main(final String args[]) {
 
-        HashMap<Integer, String> mapVilles = new HashMap<>();
+        final HashMap<Integer, String> mapVilles = new HashMap<>();
 
         mapVilles.put(13, "Marseille");
         mapVilles.put(34, "Montpellier");
@@ -17,12 +17,12 @@ public class CreationEtManipulationMap {
         mapVilles.put(33, "Bordeaux");
 
         System.out.println("Ensembles de clés:");
-        for (int i : mapVilles.keySet()) {
+        for (final int i : mapVilles.keySet()) {
             System.out.println(i);
         }
 
         System.out.println("Ensemble de villes:");
-        for (String i : mapVilles.values()) {
+        for (final String i : mapVilles.values()) {
             System.out.println(i);
         }
 

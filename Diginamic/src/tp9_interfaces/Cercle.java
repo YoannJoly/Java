@@ -14,7 +14,7 @@ public class Cercle implements ObjetGeometrique {
         return rayon * rayon * Math.PI;
     }
 
-    public Cercle(int rayon) {
+    public Cercle(final int rayon) {
         this.rayon = rayon;
     }
 

@@ -9,12 +9,12 @@ public class ConversionNombre {
     static int a = 15;
     static int b = 25;
 
-    public static int max(int a, int b) {
-        int c = Math.max(a, b);
+    public static int max(final int a, final int b) {
+        final int c = Math.max(a, b);
         return c;
     }
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         System.out.println("Chaine convertie : " + converted);
         System.out.println("Plus grand chiffre: " + max(a, b));
     }

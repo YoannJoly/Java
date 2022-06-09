@@ -2,7 +2,7 @@ package tp9_2_interface_difficilles.entites;
 
 public class Credit extends Operation {
 
-    public Credit(String date, int ammountoperation) {
+    public Credit(final String date, final int ammountoperation) {
         super(date, ammountoperation);
     }
 
