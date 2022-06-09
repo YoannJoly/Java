@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Ville {
+public class Ville implements Comparable<Ville> {
     public static void main(String[] args) {
         System.out.println("Ville avec le plus d'habitants: " + greatestCity());
         System.out.println("Toutes les villes: " + cities);
@@ -76,9 +76,26 @@ public class Ville {
         return cities;
     }
 
+    
+
+    public String getNom() {
+        return nom;
+    }
+
     @Override
     public String toString() {
         return nom + " " + nbrHabitants;
+    }
+
+    @Override
+    public int compareTo(Ville o) {
+        if (this.nom.charAt(0) > o.nom.charAt(0)){
+            return 1;
+        }
+        if (this.nom.charAt(0)  < o.nom.charAt(0) ){
+            return -1;
+        }
+        return 0;
     }
 
 }
