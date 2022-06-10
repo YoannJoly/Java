@@ -8,7 +8,7 @@ public class TestEnumeration {
             System.out.println(i);
         }
 
-        System.out.println("Libelle de ETE --> " + Saison.ETE.saison);
+        System.out.println("Libelle de ETE --> " + Saison.ETE.getSaison());
 
         System.out.println("Saison lié au libellé 'Hiver' --> " + Saison.getByName("Hiver"));
 

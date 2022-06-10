@@ -6,7 +6,7 @@ public enum Saison {
     AUTOMNE("Automne", 3),
     HIVER("Hiver", 4);
 
-    String saison;
+    private String saison;
     int saisonNumber;
 
     private Saison(final String saison, final int saisonNumber) {
