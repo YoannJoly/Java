@@ -78,6 +78,25 @@ public class Ville implements Comparable<Ville> {
         return nom;
     }
 
+    // @Override
+    // public boolean equals(Object obj) {
+    // Ville c = (Ville) obj;
+    // if (obj == this) {
+    // if (c.nom.equals((Ville) obj.nom)) {
+    // return true;
+    // } else {
+    // return false;
+    // }
+    // }
+
+    // if (!(obj instanceof Ville)) {
+    // return false;
+    // }
+
+    // return super.equals(obj);
+
+    // }
+
     @Override
     public String toString() {
         return nom + " " + nbrHabitants;
