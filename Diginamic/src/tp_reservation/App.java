@@ -11,12 +11,13 @@ public class App {
 
         ReservationAppartement.reserver(appartementSelected.getAdresse());
 
-        System.out.println("\nAppartement reservé : " + appartementSelected.getAdresse()+ "\nIl est résérvé ? "
+        System.out.println("\nAppartement reservé : " + appartementSelected.getAdresse() + "\nIl est résérvé ? "
                 + appartementSelected.isBoocked());
 
         ReservationAppartement.annulerReservation(appartementSelected.getAdresse());
 
-        System.out.println("\nAppartement annulé : " + appartementSelected.getAdresse()+ "\nIl est résérvé ? "
+        System.out.println("\nAppartement annulé : " + appartementSelected.getAdresse() + "\nIl est résérvé ? "
                 + appartementSelected.isBoocked());
+
     }
 }
