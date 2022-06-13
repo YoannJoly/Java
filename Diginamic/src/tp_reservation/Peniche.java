@@ -9,4 +9,9 @@ public class Peniche extends Appartement {
 
     int longueur;
 
+    @Override
+    public String toString() {
+        return "Peniche [longueur=" + longueur + ", toString()=" + super.toString() + "]";
+    }
+
 }

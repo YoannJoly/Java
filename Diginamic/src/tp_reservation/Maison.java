@@ -17,4 +17,9 @@ public class Maison extends Appartement {
         this.haveGarden = haveGarden;
     }
 
+    @Override
+    public String toString() {
+        return "Maison [haveGarden=" + haveGarden + ", toString()=" + super.toString() + "]";
+    }
+
 }
