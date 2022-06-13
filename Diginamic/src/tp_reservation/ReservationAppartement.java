@@ -2,9 +2,9 @@ package tp_reservation;
 
 public class ReservationAppartement extends ListAppartement {
 
-    public ReservationAppartement(final Appartement appartement, final boolean isBoocked) {
+    public ReservationAppartement(final Appartement appartement) {
         super(appartement.getPrix(), appartement.getNbPersonnes(), appartement.getEtage(), appartement.getAdresse());
-        ReservationAppartement.isBoocked = isBoocked;
+       
     }
 
     private static boolean isBoocked = false;

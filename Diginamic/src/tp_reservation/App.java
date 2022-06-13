@@ -7,7 +7,7 @@ public class App {
         System.out.println("\nListe des péniches: \n" + ListAppartement.listerPeniche());
 
         final ReservationAppartement appartementSelected = new ReservationAppartement(
-                ListAppartement.getListAppartement().get(2), false);
+                ListAppartement.getListAppartement().get(2));
 
         ReservationAppartement.reserver(appartementSelected.getAdresse());
 
